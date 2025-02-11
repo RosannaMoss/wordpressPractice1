@@ -1,14 +1,12 @@
-/* Style for the custom block */
+/* Ensure block takes full width of the screen */
 .my-new-gutenberg-block {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-sizing: border-box;
+    width: 100% !important;  /* Full width */
+    margin: 0;  /* Remove any margin */
+    padding: 20px;  /* Optional: padding inside the block */
+    box-sizing: border-box;  /* Ensure padding doesn't affect the block's width */
 }
 
+/* Adjust title and content styling */
 .my-new-gutenberg-block h2 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -18,13 +16,14 @@
     font-size: 16px;
 }
 
+/* Ticking clock styling */
 .my-new-gutenberg-block .ticking-clock {
     font-weight: bold;
     color: #333;
     font-size: 18px;
 }
 
-/* Responsive Styling for Small Screens */
+/* Ensure responsiveness on smaller screens */
 @media (max-width: 768px) {
     .my-new-gutenberg-block {
         padding: 10px;

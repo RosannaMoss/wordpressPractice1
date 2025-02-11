@@ -66,7 +66,8 @@ registerBlockType('my-new-gutenberg/block', {
                     </PanelBody>
                 </InspectorControls>
 
-                <div style={{ backgroundColor: backgroundColor, padding: '20px' }}>
+                {/* Block Edit View */}
+                <div className="my-new-gutenberg-block" style={{ backgroundColor: backgroundColor }}>
                     <h2>{customTitle}</h2>
                     <RichText
                         tagName="p"
@@ -83,7 +84,7 @@ registerBlockType('my-new-gutenberg/block', {
         const { content, backgroundColor, customTitle, showDate, currentTime } = attributes;
 
         return (
-            <div style={{ backgroundColor: backgroundColor, padding: '20px' }}>
+            <div className="my-new-gutenberg-block" style={{ backgroundColor: backgroundColor }}>
                 <h2>{customTitle}</h2>
                 <RichText.Content tagName="p" value={content} />
                 {showDate && <p>{new Date().toLocaleDateString()}</p>} {/* Date Display */}
