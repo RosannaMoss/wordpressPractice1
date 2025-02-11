@@ -43,6 +43,16 @@ function my_new_gutenberg_block_register () {
         plugin_dir_url( __FILE__ ) . 'style.css',  // Path to the CSS file for the frontend
         array(),
         filemtime( plugin_dir_path( __FILE__ ) . 'style.css' )  // Version (based on file modification time)
+        
+    );
+
+       // Enqueue the frontend script for the ticking clock
+       wp_enqueue_script(
+        'my-new-gutenberg-block-js',
+        plugin_dir_url( __FILE__ ) . 'build/index.js',  // Path to the frontend JavaScript file
+        array(),
+        filemtime( plugin_dir_path( __FILE__ ) . 'build/index.js' ),
+        true
     );
 }
 
