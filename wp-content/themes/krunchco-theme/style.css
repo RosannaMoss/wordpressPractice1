@@ -1,0 +1,58 @@
+/*
+Theme Name: Krunchco Theme
+Theme URI: http://example.com
+Author: Your Name
+Description: A custom WordPress theme for Krunchco
+Version: 1.0
+License: GNU General Public License v2 or later
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0px;
+} */
+
+img.full-width {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    padding-top: 25px;
+
+}
+
+.full-width-image img {
+    width: 1000px;
+    height: auto;
+    object-fit: cover;
+    border-color: black 10px;
+}
+
+img.half-width {
+    width: 50%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    padding-top: 25px;
+
+}
+
+.half-width-image img {
+    width: 1000px;
+    height: auto;
+    object-fit: cover;
+    border-color: black 10px;
+}
+
+/* 
+<img src="your-image-url.jpg" class="full-width" alt="Full Width Image">
+https://practice1.local/wp-content/uploads/2025/02/Screenshot-2025-02-05-at-1.54.48 PM-5.png */
+
+/* https://practice1.local/wp-content/uploads/2025/02/5143751_uploadsmember227514yourshot-227514-5143751jpg_ti36r6tdxfee2jlr73b6gmqr7uzxs2udwatjavjxeftgooyp4jfa_5472x3648_3x2-scaled.avif */

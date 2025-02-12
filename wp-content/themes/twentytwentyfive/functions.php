@@ -156,22 +156,3 @@ if ( ! function_exists( 'twentytwentyfive_format_binding' ) ) :
 		}
 	}
 endif;
-
-// Custom template loader
-function my_theme_template_include($template) {
-    // Check if the requested page is using the custom template
-    if (is_page_template('customTheme/custom-page-template.php')) {
-        // Return the path to your custom template
-        $template = get_template_directory() . '/customTheme/custom-page-template.php';
-    }
-    return $template;
-}
-add_filter('template_include', 'my_theme_template_include');
-
-// Add support for page templates
-function my_theme_page_templates($page_templates) {
-    // Add your custom template to the list of available templates
-    $page_templates['customTheme/custom-page-template.php'] = 'Custom Page Template';
-    return $page_templates;
-}
-add_filter('theme_page_templates', 'my_theme_page_templates');
